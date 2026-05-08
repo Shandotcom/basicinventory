@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Inventory System</h2>
+    
+    <div class="input-group">
+        <label for="itemName">Item:</label>
+        <input type="text" id="itemName">
+    </div>
+    
+    <div class="input-group">
+        <label for="itemQty">Quantity:</label>
+        <input type="number" id="itemQty">
+    </div>
+
+    <button id="submitBtn">Submit</button>
+
+    <div class="view-section">
+        <label>View table (Check the box)</label>
+        <input type="checkbox" id="viewToggle">
+    </div>
+
+    <table id="inventoryTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be injected here by JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
